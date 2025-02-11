@@ -1,4 +1,5 @@
-http://playwright.de/docs/intro
+http://playwright.dev/docs/intro
+http://regex101.com/
 node --version
 npm init playwright@latest
 npx playwright test --headed
