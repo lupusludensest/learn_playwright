@@ -10,3 +10,4 @@ npx playwright codegen https://the-internet.herokuapp.com/login
 npx playwright test --headed
 npx playwright show-report
 install renorex to Chrome
+npx playwright test name_of_the_file.js --headed --debug
