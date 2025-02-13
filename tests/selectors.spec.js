@@ -27,29 +27,36 @@ test.only('Learning selectors', async ({ page }) => {
     await expect(page.locator('#counter')).toHaveText('6');
 
     // 6. Selecting by the text content
-    await page.locator('text=CLICK ME)').click
+    await page.locator('text=CLICK ME').click();
+    await expect(page.locator('#counter')).toHaveText('7');
 
-    // 7.  Combine selectors for presision, class and text - find exact text match
+    // 7. Combine selectors for precision, class and text - find exact text match
     await page.locator('.button-style:text("CLICK ME")').click();
+    await expect(page.locator('#counter')).toHaveText('8');
 
     // 8. Find elements containing partial text, has-text
     await page.locator('button:has-text("ICK")').click();
-    
+    await expect(page.locator('#counter')).toHaveText('9');
+
     // 9. Attribute and text combination
     await page.locator('[id="clickButton"]:text("CLICK ME")').click();
+    await expect(page.locator('#counter')).toHaveText('10');
 
     // 10. Playwright locator, http://playwright.dev/docs/locators
     // get by text
     await page.getByText('CLICK ME').click();
+    await expect(page.locator('#counter')).toHaveText('11');
 
     // 11. xPATH, attribute and exact text combination
-    await page.locator("//button[contains(text(), 'CLICK ME')]").click(); 
+    await page.locator("//button[contains(text(), 'CLICK ME')]").click();
+    await expect(page.locator('#counter')).toHaveText('12');
 
     // 12. By role
     await page.getByRole('button', { name: /click me/i }).click();
+    await expect(page.locator('#counter')).toHaveText('13');
 
     // Assert final counter value
-    await expect(page.locator('#counter')).toHaveText('12');
+    await expect(page.locator('#counter')).toHaveText('13');
 
     await page.pause();
 });
