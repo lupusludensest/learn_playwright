@@ -11,34 +11,29 @@ test.describe.only('Learn assertions', () => {
 
         // 2. To have a title
         await expect(page).toHaveTitle('The Internet');
-        await page.pause();
+
     });
 
     test.only('Continue with assertions part 1', async ({ page }) => {
         await page.goto('http://the-internet.herokuapp.com/');
 
         // 3. Assert the visibility of an element
-        await page.pause();
         await expect(page.locator('h1')).toBeVisible();
-        await page.pause();
 
         // 4. Assert element to have a text
         await expect(page.locator('h2')).toHaveText('Available Examples');
-        await page.pause();
 
         // 5. Assert element to have a text
         await expect(page.locator('body')).toContainText('WYSIWYG');
-        await page.pause();
+
     });
 
     test.only('Continue with assertions part 2', async ({ page }) => {
         await page.goto('http://the-internet.herokuapp.com/');
 
         // 6. Assert count of elements
-        await page.pause();
         await expect(page.locator('li')).toHaveCount(44);
-        await page.pause();
-
+  
         // 7. Assert element to be checked
         await page.goto('http://the-internet.herokuapp.com/checkboxes');
         await page.waitForTimeout(1000);
@@ -61,7 +56,6 @@ test.describe.only('Learn assertions', () => {
         await page.pause();
         await page.locator('#username').fill('tomsmith');
         await expect(page.locator('#username')).toHaveValue('tomsmith');
-        await page.pause();
 
         // 9. Element is enabled
         await expect(page.locator('button[type="submit"]')).toBeEnabled();
