@@ -1,12 +1,13 @@
+require('dotenv').config();
 import { test, expect } from '@playwright/test';
 
 test.describe.only('Learn assertions', () => {
 
     test('Verify web page behaviour', async ({ page }) => {
-        await page.goto('http://the-internet.herokuapp.com/');
+        await page.goto(process.env.BASE_URL);
 
         // 1. To have URL
-        await expect(page).toHaveURL('http://the-internet.herokuapp.com/');
+        await expect(page).toHaveURL(process.env.BASE_URL);
         await page.pause();
 
         // 2. To have a title
@@ -15,7 +16,7 @@ test.describe.only('Learn assertions', () => {
     });
 
     test.only('Continue with assertions part 1', async ({ page }) => {
-        await page.goto('http://the-internet.herokuapp.com/');
+        await page.goto(process.env.BASE_URL);
 
         // 3. Assert the visibility of an element
         await expect(page.locator('h1')).toBeVisible();
@@ -29,13 +30,13 @@ test.describe.only('Learn assertions', () => {
     });
 
     test.only('Continue with assertions part 2', async ({ page }) => {
-        await page.goto('http://the-internet.herokuapp.com/');
+        await page.goto(process.env.BASE_URL);
 
         // 6. Assert count of elements
         await expect(page.locator('li')).toHaveCount(44);
   
         // 7. Assert element to be checked
-        await page.goto('http://the-internet.herokuapp.com/checkboxes');
+        await page.goto(`${process.env.BASE_URL}/checkboxes`);
         await page.waitForTimeout(1000);
         await page.waitForLoadState('networkidle');
 
@@ -49,13 +50,13 @@ test.describe.only('Learn assertions', () => {
     });
 
     test.only('Continue with assertions part 3', async ({ page }) => {
-        await page.goto('http://the-internet.herokuapp.com/');
+        await page.goto(process.env.BASE_URL);
 
         // 8. Assert element to have value
-        await page.goto('http://the-internet.herokuapp.com/login');
+        await page.goto(`${process.env.BASE_URL}/login`);
         await page.pause();
-        await page.locator('#username').fill('tomsmith');
-        await expect(page.locator('#username')).toHaveValue('tomsmith');
+        await page.locator('#username').fill(process.env.USERNAME);
+        await expect(page.locator('#username')).toHaveValue(process.env.USERNAME);
 
         // 9. Element is enabled
         await expect(page.locator('button[type="submit"]')).toBeEnabled();
@@ -63,7 +64,7 @@ test.describe.only('Learn assertions', () => {
     });
 
     test.only('Continue with assertions part 4', async ({ page }) => {
-        await page.goto('http://the-internet.herokuapp.com/');
+        await page.goto(process.env.BASE_URL);
 
         // 10. Verify text stored in variable
         const headerText = await page.locator('h1').textContent();

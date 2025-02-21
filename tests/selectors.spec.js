@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { test, expect } from '@playwright/test';
 
 test.only('Learning selectors', async ({ page }) => {
