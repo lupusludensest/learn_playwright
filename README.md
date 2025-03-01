@@ -1,6 +1,3 @@
-http://playwright.dev/docs/intro
-http://regex101.com/
-http://playwright.dev/docs/locators
 node --version
 npm init playwright@latest
 npx playwright test --headed
