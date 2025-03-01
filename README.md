@@ -12,3 +12,9 @@ and check again: 
 git config --get core.ignorecase, git config --global core.ignorecase false, expected -> false
 code $HOME\.gitconfig 
 ++++++++++
+//open local git condig
+code E:\Gurov_SSD_256\IT\Testing\Automation_08_09_2019\learn_playwright\.git\config  
+// open system gitconfig
+code "C:\Program Files\Git\etc\gitconfig"
+// open global gitconfig
+code "C:\Users\rapid\.gitconfig"
