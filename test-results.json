@@ -1,0 +1,114 @@
+{
+  "config": {
+    "configFile": "E:\\Gurov_SSD_256\\IT\\Testing\\Automation_08_09_2019\\learn_playwright\\playwright.config.js",
+    "rootDir": "E:/Gurov_SSD_256/IT/Testing/Automation_08_09_2019/learn_playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "E:/Gurov_SSD_256/IT/Testing/Automation_08_09_2019/learn_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/Gurov_SSD_256/IT/Testing/Automation_08_09_2019/learn_playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "selectors.spec.js",
+      "file": "selectors.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Learning selectors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 67,
+                  "status": "passed",
+                  "duration": 8403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-07T02:20:30.303Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\Gurov_SSD_256\\IT\\Testing\\Automation_08_09_2019\\learn_playwright\\test-results\\selectors-Learning-selectors-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65090d1ebe65fa39cf9d-cefb45a0244e936ee235",
+          "file": "selectors.spec.js",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-07T02:20:28.789Z",
+    "duration": 10388.888999999966,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
