@@ -1,0 +1,14 @@
+{
+    "description": "Playwright MCP Server",
+    "tools": [
+        {
+            "name": "playwright",
+            "description": "Run Playwright tests and commands",
+            "command": "npx",
+            "args": [
+                "@playwright/mcp"
+            ]
+        }
+    ],
+    "port": 9323
+}

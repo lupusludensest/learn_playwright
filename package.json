@@ -1,18 +1,38 @@
 {
   "name": "learnplaywright",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Playwright test automation project with various test examples and interactive components",
   "main": "index.js",
   "scripts": {
-    "test:smoke": "npx playwright test --grep \"@smoke\"",
-    "test:regression": "npx playwright test --grep \"@regression\"",
-    "test:all": "npm run test:smoke && npm run test:regression"
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep \"@smoke\"",
+    "test:regression": "playwright test --grep \"@regression\"",
+    "test:all": "npm run test:smoke && npm run test:regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "install:browsers": "playwright install"
   },
-  "keywords": [],
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e",
+    "ui-testing"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/mcp": "^0.0.10",
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.11.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

@@ -3,7 +3,9 @@ import { test, expect } from '@playwright/test';
 test.describe("Learn assertions @assertions_group", () => {
 
     test('Verify web page behavior @smoke', async ({page}) => {
-        await page.goto('https://the-internet.herokuapp.com/')
+        // Increase timeout for this specific test
+        test.slow();
+        await page.goto('https://the-internet.herokuapp.com/', { timeout: 30000 })
 
         // 1. to have URL
         await expect(page).toHaveURL('https://the-internet.herokuapp.com/')

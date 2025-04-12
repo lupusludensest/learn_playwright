@@ -5,8 +5,8 @@ test('Learning selectors', async ({ page }) => {
     // Set a longer timeout for the test
     test.setTimeout(20000); // Set timeout to 20 seconds
 
-    // Navigate to the webpage
-    await page.goto('http://127.0.0.1:5500/clickMe.html');
+    // Navigate to the webpage using file protocol
+    await page.goto('file:///E:/Gurov_SSD_256/IT/Testing/Automation_08_09_2019/learn_playwright/clickMe.html');
 
     // Helper function to wait for the counter to have the expected text
     async function waitForCounterText(expectedText) {
