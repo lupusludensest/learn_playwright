@@ -1,0 +1,13 @@
+rules:
+  - name: default
+    files: "**/*.{js,ts}"
+    language: javascript
+    metrics:
+      - maintainability
+      - cyclomatic_complexity
+    refactoring:
+      enabled: true
+    suggestions:
+      enabled: true
+    review:
+      enabled: true
