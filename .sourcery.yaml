@@ -1,13 +1,5 @@
 rules:
-  - name: default
+  - id: javascript-rules
+    description: Rules for JavaScript and TypeScript files
     files: "**/*.{js,ts}"
     language: javascript
-    metrics:
-      - maintainability
-      - cyclomatic_complexity
-    refactoring:
-      enabled: true
-    suggestions:
-      enabled: true
-    review:
-      enabled: true

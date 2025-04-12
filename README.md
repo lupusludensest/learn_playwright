@@ -1,4 +1,4 @@
-# Playwright Test Project
+# Playwright Learning Playwright
 
 ## Setup and Installation
 
