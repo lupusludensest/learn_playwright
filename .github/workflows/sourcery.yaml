@@ -7,10 +7,9 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: sourcery-ai/action@v1
+      - uses: actions/checkout@v3      - uses: sourcery-ai/action@v1
         with:
           token: ${{ secrets.SOURCERY_TOKEN }}
-          check: true  # Set to either true or false as needed
-          in_place: false  # Set to either true or false as needed
-          verbose: true  # Set to either true or false as needed
+          check: true
+          in_place: false
+          verbose: true
