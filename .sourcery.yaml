@@ -1,5 +1,5 @@
 rules:
   - id: javascript-rules
     description: Rules for JavaScript and TypeScript files
-    files: "**/*.{js,ts}"
+    pattern: "**/*.{js,ts}"  # Replace 'files' with 'pattern'
     language: javascript
