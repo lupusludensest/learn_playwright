@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -83,656 +83,10 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.50.1",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
-    {
-      "title": "assertions.spec.js",
-      "file": "assertions.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Learn assertions @assertions_group",
-          "file": "assertions.spec.js",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Verify web page behavior @smoke",
-              "ok": true,
-              "tags": [
-                "assertions_group",
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4289,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:12:59.734Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-67560c2a5a8d7b445f63",
-              "file": "assertions.spec.js",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "Continues with assertions",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 5611,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:12:59.735Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-55c3cc1cee9fead6fa75",
-              "file": "assertions.spec.js",
-              "line": 17,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 2",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 6504,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:12:59.738Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-1fb364b6d410570af6c1",
-              "file": "assertions.spec.js",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 3",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 4414,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:12:59.739Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-5cd93dad140349884700",
-              "file": "assertions.spec.js",
-              "line": 50,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 4",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 3316,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:04.688Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-a90e2ba6ec4c2535be9b",
-              "file": "assertions.spec.js",
-              "line": 63,
-              "column": 9
-            },
-            {
-              "title": "Verify web page behavior @smoke",
-              "ok": true,
-              "tags": [
-                "assertions_group",
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 5345,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:23.007Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-0a0bf94e04e5da2b3cc2",
-              "file": "assertions.spec.js",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "Continues with assertions",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 6058,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:23.125Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-7060d6c7d1ce3c02f9be",
-              "file": "assertions.spec.js",
-              "line": 17,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 2",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 8279,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:23.594Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-6115ea096c970b53c1f1",
-              "file": "assertions.spec.js",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 3",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 7489,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:35.890Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-aa6b4e0500753957a230",
-              "file": "assertions.spec.js",
-              "line": 50,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 4",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 2242,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:30.621Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-012f36054870e8e546d9",
-              "file": "assertions.spec.js",
-              "line": 63,
-              "column": 9
-            },
-            {
-              "title": "Verify web page behavior @smoke",
-              "ok": true,
-              "tags": [
-                "assertions_group",
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "status": "passed",
-                      "duration": 3661,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:48.541Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-078d62147b8d3da5305f",
-              "file": "assertions.spec.js",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "Continues with assertions",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "status": "passed",
-                      "duration": 3894,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:49.387Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-dc122d196f0ee82ebcf5",
-              "file": "assertions.spec.js",
-              "line": 17,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 2",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "status": "passed",
-                      "duration": 7934,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:51.001Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-881650194aa2d4baf13e",
-              "file": "assertions.spec.js",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 3",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "status": "passed",
-                      "duration": 5438,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:55.873Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-11e63e8d8ee5d1e05f0f",
-              "file": "assertions.spec.js",
-              "line": 50,
-              "column": 9
-            },
-            {
-              "title": "Continue with assertions part 4",
-              "ok": true,
-              "tags": [
-                "assertions_group"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "status": "passed",
-                      "duration": 2938,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-12T06:13:52.385Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4cf67306dc47f75b569a-a03c1ca5385c6922651f",
-              "file": "assertions.spec.js",
-              "line": 63,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "codegen_login.spec.js",
-      "file": "codegen_login.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "This was generated by codegen",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 14097,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:04.699Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "35743e1e24e4b1973c40-95cbc4c2be9891ed22f7",
-          "file": "codegen_login.spec.js",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "This was generated by codegen",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 6761,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:32.923Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "35743e1e24e4b1973c40-549c85247e6be7d711a6",
-          "file": "codegen_login.spec.js",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "This was generated by codegen",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 9,
-                  "status": "passed",
-                  "duration": 12587,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:53.552Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "35743e1e24e4b1973c40-e0bfad419bc980c2041c",
-          "file": "codegen_login.spec.js",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
     {
       "title": "example.spec.js",
       "file": "example.spec.js",
@@ -752,14 +106,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11354,
+                  "duration": 6624,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:06.258Z",
+                  "startTime": "2025-04-16T18:32:40.661Z",
                   "attachments": []
                 }
               ],
@@ -784,14 +138,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11996,
+                  "duration": 9424,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:07.075Z",
+                  "startTime": "2025-04-16T18:32:48.153Z",
                   "attachments": []
                 }
               ],
@@ -816,14 +170,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4538,
+                  "duration": 11138,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:34.619Z",
+                  "startTime": "2025-04-16T18:33:05.460Z",
                   "attachments": []
                 }
               ],
@@ -848,14 +202,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7574,
+                  "duration": 9727,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:35.277Z",
+                  "startTime": "2025-04-16T18:33:20.759Z",
                   "attachments": []
                 }
               ],
@@ -880,14 +234,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 8,
+                  "workerIndex": 2,
                   "status": "passed",
-                  "duration": 3302,
+                  "duration": 8041,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:55.348Z",
+                  "startTime": "2025-04-16T18:33:40.251Z",
                   "attachments": []
                 }
               ],
@@ -912,14 +266,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 8,
+                  "workerIndex": 2,
                   "status": "passed",
-                  "duration": 6354,
+                  "duration": 11289,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-12T06:13:58.669Z",
+                  "startTime": "2025-04-16T18:33:48.769Z",
                   "attachments": []
                 }
               ],
@@ -932,230 +286,13 @@
           "column": 1
         }
       ]
-    },
-    {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "This is a login test @smoke @regression",
-          "ok": true,
-          "tags": [
-            "smoke",
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 9553,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:08.057Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-3524ac0e91159138198c",
-          "file": "login.spec.js",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "This is a login test @smoke @regression",
-          "ok": true,
-          "tags": [
-            "smoke",
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 5800,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:39.250Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-779f45d17f2903f9a0d7",
-          "file": "login.spec.js",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "This is a login test @smoke @regression",
-          "ok": true,
-          "tags": [
-            "smoke",
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 10,
-                  "status": "passed",
-                  "duration": 9805,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:59.082Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "badc1754af1944f68b2b-c3f8048a100b9026da97",
-          "file": "login.spec.js",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "selectors.spec.js",
-      "file": "selectors.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Learning selectors",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 20000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 12292,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:17.657Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "65090d1ebe65fa39cf9d-cefb45a0244e936ee235",
-          "file": "selectors.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "Learning selectors",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 20000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 12420,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:13:39.748Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "65090d1ebe65fa39cf9d-c3d5e53cf119f0d92e97",
-          "file": "selectors.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "Learning selectors",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 20000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "status": "passed",
-                  "duration": 17964,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-12T06:14:01.458Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "65090d1ebe65fa39cf9d-9b665c460b4d88517987",
-          "file": "selectors.spec.js",
-          "line": 4,
-          "column": 5
-        }
-      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-12T06:12:58.290Z",
-    "duration": 81221.318,
-    "expected": 30,
+    "startTime": "2025-04-16T18:32:36.768Z",
+    "duration": 83629.424,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
