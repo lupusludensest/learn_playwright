@@ -25,9 +25,13 @@ const config = {
     ['list'],
     ['html'],
     ['json', { outputFile: 'test-results.json' }]
-  ],
-  /* Global test settings */
+  ],  /* Global test settings */
   use: {
+    /* Enable Model Context Protocol */
+    mcp: {
+      enabled: true,
+      playwrightCLIPath: require.resolve('@playwright/test/cli')
+    },
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: process.env.BASE_URL || 'http://127.0.0.1:3000',
     /* Take screenshot on failure */

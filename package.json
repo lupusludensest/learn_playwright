@@ -2,8 +2,7 @@
   "name": "learnplaywright",
   "version": "1.0.0",
   "description": "A Playwright test automation project with various test examples and interactive components",
-  "main": "index.js",
-  "scripts": {
+  "main": "index.js",  "scripts": {
     "test": "playwright test",
     "test:smoke": "playwright test --grep \"@smoke\"",
     "test:regression": "playwright test --grep \"@regression\"",
@@ -13,7 +12,8 @@
     "test:ui": "playwright test --ui",
     "report": "playwright show-report",
     "codegen": "playwright codegen",
-    "install:browsers": "playwright install"
+    "install:browsers": "playwright install",
+    "mcp": "npx @playwright/mcp"
   },
   "keywords": [
     "playwright",
@@ -25,8 +25,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/mcp": "^0.0.10",
-    "@playwright/test": "^1.41.2",
+    "@playwright/mcp": "0.0.13",
+    "@playwright/test": "1.51.1",
     "@types/node": "^20.11.20"
   },
   "dependencies": {

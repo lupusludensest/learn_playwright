@@ -1,14 +1,6 @@
 {
-    "description": "Playwright MCP Server",
-    "tools": [
-        {
-            "name": "playwright",
-            "description": "Run Playwright tests and commands",
-            "command": "npx",
-            "args": [
-                "@playwright/mcp"
-            ]
-        }
-    ],
-    "port": 9323
+  "server": {
+    "command": "node",
+    "args": ["./node_modules/@playwright/mcp/lib/cli.js"]
+  }
 }
